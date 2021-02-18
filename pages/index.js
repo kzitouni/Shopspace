@@ -1,65 +1,60 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import React from "react"
+import NavBar from "../components/NavBar/NavBar"
+import Footer from "../components/Footer/Footer"
+import MainBlock from "../components/MainBlock/MainBlock"
+import Image from "../components/Image/Image"
+import FeatureCards from "../components/FeatureCards/FeatureCards"
+import FeatureImgText from "../components/FeatureImgText/FeatureImgText"
+import LowerBlock from "../components/LowerBlock/LowerBlock"
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+export default function Landing(){
+    return(
+        <>
+            <NavBar display={true}/>
+            <MainBlock
+                buttonDisplay = {true}
+                title = "Create your store with ease."
+                text = "Shopspace empowers brands to create the digital experience they want their customers to experience.  Creating that experience is easy with ShopSpace."
+                Button = "Get Started"
+                href='/Platforms'
+                first={true}
+            />
+            <Image url="https://i.ibb.co/9r1f7Mc/fewfwe.webp"/>
+            <MainBlock 
+                buttonDisplay = {false}
+                title = "Craft Engaging Pages"
+                text = "Your customers will enjoy your site with a wide variety of tools."
+            />
+            <FeatureCards />
+            <FeatureImgText 
+                imageDir = "right"
+                title = "Create pages confidently"
+                text = "With 24/7 support we'll be there to help resolve any issue, any time."
+                quote = '"The support experience was great. Shopspace was always with us."'
+                quotee = "Matthias Richter"
+                url = "https://ceblog.s3.amazonaws.com/wp-content/uploads/2018/08/28183850/home_post_2.gif"
+            />
+            <FeatureImgText 
+                imageDir = "left"
+                title = "Join an amazing community of leaders"
+                text = "Be among the ecommerce agencies that use Shopspace daily."
+                quote = '"Since we have been with shogun we have seen a 25% increase in conversion."'
+                quotee = "Gabriella Santos"
+                url = "https://www.womened.org/images/2020/01/31/networking-infographic.png"
+            />
+            <MainBlock 
+                buttonDisplay = {false}
+                title = "Boosting ecommerce Everywhere"
+                text = "Businesses everywhere generate more in sales using Shopspace."
+            />
+            <LowerBlock 
+                buttonDisplay={true}
+                title="Get started with Shopspace"
+                text="Try for free, and explore the tools to build a store people will remember."
+                Button= "Get Started"
+                href="/Platforms"
+            />
+            <Footer />
+        </>
+    )
 }

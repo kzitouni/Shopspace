@@ -6,6 +6,7 @@ import Image from "../components/Image/Image"
 import FeatureCards from "../components/FeatureCards/FeatureCards"
 import FeatureImgText from "../components/FeatureImgText/FeatureImgText"
 import LowerBlock from "../components/LowerBlock/LowerBlock"
+import Head from "next/head";
 
 export default function Landing(){
     return(

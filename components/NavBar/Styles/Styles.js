@@ -115,7 +115,7 @@ export const HoverItem = styled.a`
     padding-left: 20px;
     padding-right: 20px;
     text-decoration: unset;
-    transition:.3s 0s ease-in-out;
+    transition:.2s 0s ease-in-out;
     &:hover {
         cursor: pointer;
         ${TitleText}{
@@ -169,11 +169,10 @@ export const Button = styled.a`
     align-items:center;
     justify-content:center;
     text-decoration:none;
-    transition: .5s 0s ease-in-out;
+    transition: .2s 0s ease-in-out;
     &:hover{
         position:relative;
         opacity:.9;
-        transition: .5s 0s ease-in-out;
         transform: scale(1.03)
     }
     @media ${(props) => props.theme.laptop} {

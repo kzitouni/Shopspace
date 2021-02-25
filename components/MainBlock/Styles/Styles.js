@@ -95,11 +95,10 @@ export const Button = styled.a`
     text-align:center;
     justify-content:center;
     align-items: center;
-    transition: .5s 0s ease-in-out;
+    transition: .2s 0s ease-in-out;
     &:hover{
         position:relative;
         opacity:.9;
-        transition: .5s 0s ease-in-out;
         transform: scale(1.03)
     }
 `;

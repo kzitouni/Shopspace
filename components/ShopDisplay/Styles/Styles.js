@@ -123,11 +123,11 @@ export const Button = Styled.a`
     justify-content:center;
     text-decoration:none;
     cursor:pointer;
-    transition: .5s 0s ease-in-out;
+    transition: .2s 0s ease-in-out;
     &:hover{
         position:relative;
         opacity:.9;
-        transition: .5s 0s ease-in-out;
+        transition: .2s 0s ease-in-out;
         transform: scale(1.03)
     }
 `;

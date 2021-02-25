@@ -114,11 +114,10 @@ export const Submit = Styled.a`
     align-items:center;
     justify-content:center;
     text-decoration:none;
-    transition: .5s 0s ease-in-out;
+    transition: .2s 0s ease-in-out;
     &:hover{
         position:relative;
         opacity:.9;
-        transition: .5s 0s ease-in-out;
         transform: scale(1.03)
     }
 `;
